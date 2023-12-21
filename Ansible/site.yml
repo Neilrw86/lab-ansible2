@@ -10,4 +10,13 @@
 
 - hosts: nas3
   roles:
-  - role: hypervisor  
+  - role: hypervisor
+
+- hosts: nas5, nuc, nuc1, nuc2
+- hosts: nas5
+  roles:
+  - role: k8s-master  
+
+- hosts: nuc, nuc1, nuc2
+  roles:
+  - role: k8s-worker
