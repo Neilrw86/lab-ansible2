@@ -36,3 +36,8 @@ all:
           ansible_host: 192.168.1.32
           ansible_user: ubuntu
 
+    k8s:
+      hosts:
+        nuc:
+        nuc1:
+        nuc2:
